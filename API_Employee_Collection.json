@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "ae3a5c97-7907-4e6d-9439-40e560e9619b",
+		"name": "API Employee Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42568461",
+		"_collection_link": "https://www.postman.com/flight-specialist-27806904/workspace/crud-api/collection/42568461-ae3a5c97-7907-4e6d-9439-40e560e9619b?action=share&source=collection_link&creator=42568461"
+	},
+	"item": [
+		{
+			"name": "Get All Employees",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api_se/get_all.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_se",
+						"get_all.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New Employee\",\r\n    \"email\": \"new.employee@example.com\",\r\n    \"division_id\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api_se/create_employee.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_se",
+						"create_employee.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api_se/delete_employee.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_se",
+						"delete_employee.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

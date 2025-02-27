@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Employees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Manajemen Employees</h1>
+
+    <!-- Tombol Refresh Data -->
+    <button onclick="fetchEmployees()">Muat Ulang Data</button>
+
+    <!-- Tabel Data Employees -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Divisi</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable"></tbody>
+    </table>
+
+    <h2>Tambah Employee</h2>
+    <form id="employeeForm">
+        <input type="text" id="name" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="number" id="division_id" placeholder="ID Divisi" required>
+        <button type="submit">Tambah</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
